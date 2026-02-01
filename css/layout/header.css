@@ -173,7 +173,7 @@
     }
     
     .header__phone {
-        font-size: 1rem;
+        display: none;
     }
     
     .header__nav {
