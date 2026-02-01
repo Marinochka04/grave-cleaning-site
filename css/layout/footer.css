@@ -63,8 +63,8 @@
 }
 
 .footer__contact {
-     justify-self: end;
-    text-align: left; 
+    justify-self: end;
+    text-align: left;
 }
 
 .footer__phone {
@@ -81,8 +81,15 @@
     color: var(--color-white);
 }
 
-.footer__telegram {
-    display: inline-block;
+.footer__contact-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__telegram,
+.footer__vk {
+    display: block;
+    text-align: center;
     padding: 0.5rem 1.25rem;
     background: rgba(255, 255, 255, 0.1);
     border-radius: var(--radius-sm);
@@ -92,7 +99,8 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.footer__telegram:hover {
+.footer__telegram:hover,
+.footer__vk:hover {
     background: var(--color-accent);
     border-color: var(--color-accent);
     transform: translateY(-2px);
