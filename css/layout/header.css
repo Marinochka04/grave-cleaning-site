@@ -147,10 +147,6 @@
     .header__burger {
         display: flex;
     }
-    
-    .header__nav {
-        padding: 0.75rem 0;
-    }
 }
 
 @media (max-width: 480px) {
@@ -160,9 +156,5 @@
     
     .header__phone {
         display: none;
-    }
-    
-    .header__nav {
-        padding: 0.65rem 0;
     }
 }
