@@ -190,28 +190,27 @@
 }
 
 .gallery__more {
+    text-align: center;
     display: flex;
     justify-content: center;
     margin-top: var(--spacing-lg);
 }
 
-.gallery__more button {
-    display: inline-block;
-    min-width: 200px;
-    max-width: 300px;
-    padding: 0.6rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
+.gallery__more .btn {
+    background: transparent;
+    color: var(--color-primary);
     border: 2px solid var(--color-primary);
     border-radius: var(--radius-sm);
-    background: var(--color-white);
+    padding: 1rem 2.5rem;
+    font-weight: 600;
     transition: all var(--transition-base);
 }
 
-.gallery__more button:hover {
+.gallery__more .btn:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
     transform: translateY(-3px);
-    background: rgba(0, 0, 0, 0.05);
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 20px rgba(44, 62, 80, 0.3);
 }
 
 @media (max-width: 768px) {
