@@ -89,6 +89,7 @@
     font-weight: 600;
     letter-spacing: 0.3px;
     text-transform: uppercase;
+    padding: 0.75rem 2rem;
 }
 
 .btn--primary:hover {
@@ -107,6 +108,7 @@
     letter-spacing: 0.3px;
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px); 
+    padding: 0.75rem 2rem;
 }
 
 .btn--secondary:hover {
