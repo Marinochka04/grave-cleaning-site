@@ -1,0 +1,100 @@
+html {
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: var(--color-accent);
+    color: var(--color-white);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.8s ease;
+}
+
+.slide-in-up {
+    animation: slideInUp 0.8s ease;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-lg {
+    margin-top: var(--spacing-lg);
+}
+
+.mb-lg {
+    margin-bottom: var(--spacing-lg);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media print {
+    .header,
+    .footer,
+    .hero__cta,
+    .contacts__card-buttons {
+        display: none;
+    }
+    
+    body {
+        background: white;
+    }
+    
+    .section-title::after {
+        background: black;
+    }
+}
+
+.skip-to-main {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    z-index: 9999;
+    transition: top var(--transition-base);
+}
+
+.skip-to-main:focus {
+    top: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}

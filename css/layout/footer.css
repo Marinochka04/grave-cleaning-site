@@ -1,0 +1,129 @@
+.footer {
+    background: var(--color-primary);
+    color: rgba(255, 255, 255, 0.9);
+    padding: var(--spacing-xl) 0 var(--spacing-md);
+}
+
+.footer__content {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    padding-bottom: var(--spacing-md);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    align-items: start;
+}
+
+.footer__logo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer__logo-text {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-white);
+}
+
+.footer__logo-city {
+    font-size: 1rem;
+    color: var(--color-accent-light);
+    font-style: italic;
+}
+
+.footer__description {
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.6;
+}
+
+.footer__services-title,
+.footer__contact-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-white);
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer__services {
+    justify-self: center;
+}
+
+.footer__services-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer__services-list li {
+    color: rgba(255, 255, 255, 0.8);
+    transition: var(--transition-base);
+}
+
+.footer__contact {
+     justify-self: end;
+    text-align: left; 
+}
+
+.footer__phone {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-accent-light);
+    margin-bottom: var(--spacing-xs);
+    transition: var(--transition-base);
+}
+
+.footer__phone:hover {
+    color: var(--color-white);
+}
+
+.footer__telegram {
+    display: inline-block;
+    padding: 0.5rem 1.25rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-sm);
+    color: var(--color-white);
+    margin-bottom: var(--spacing-sm);
+    transition: var(--transition-base);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer__telegram:hover {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    transform: translateY(-2px);
+}
+
+.footer__time {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+.footer__bottom {
+    text-align: center;
+    padding-top: var(--spacing-sm);
+}
+
+.footer__copyright {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .footer__content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+        text-align: center;
+    }
+
+    .footer__services,
+    .footer__contact {
+        justify-self: center;
+        text-align: center;
+    }
+}

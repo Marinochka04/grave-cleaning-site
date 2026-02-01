@@ -1,0 +1,117 @@
+.about {
+    padding: var(--spacing-xxl) 0;
+    background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-white) 100%);
+    position: relative;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 4px;
+    background: linear-gradient(to right, transparent, var(--color-accent), transparent);
+}
+
+.about__content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about__heading {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+    text-align: center;
+}
+
+.about__paragraph {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.15rem;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.about__features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-xl);
+}
+
+.about__feature {
+    display: flex;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-lg);
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-base);
+    position: relative;
+}
+
+.about__feature::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--color-accent);
+    border-radius: 0 0 4px 4px;
+}
+
+.about__feature:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-md);
+}
+
+.about__feature-icon {
+    font-size: 1.8rem;
+    color: var(--color-accent);
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(139, 115, 85, 0.15), rgba(139, 115, 85, 0.08));
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+.about__feature-text {
+    flex: 1;
+}
+
+.about__feature-text strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: var(--spacing-xl) 0;
+    }
+    
+    .about__features {
+        grid-template-columns: 1fr;
+        margin-top: var(--spacing-lg);
+    }
+    
+    .about__feature {
+        padding: var(--spacing-md);
+    }
+}
+
+@media (max-width: 480px) {
+    .about__paragraph {
+        text-align: left;
+    }
+}

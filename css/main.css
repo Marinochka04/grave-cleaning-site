@@ -1,0 +1,12 @@
+@import url('./layout/reset.css');
+@import url('./layout/variables.css');
+@import url('./layout/base.css');
+@import url('./layout/header.css');
+@import url('./layout/hero.css');
+@import url('./layout/stats.css');
+@import url('./layout/services.css');
+@import url('./layout/about.css');
+@import url('./layout/gallery.css');
+@import url('./layout/reviews.css');
+@import url('./layout/contacts.css');
+@import url('./layout/footer.css');
