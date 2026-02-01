@@ -1,5 +1,5 @@
 .contacts {
-    padding: var(--spacing-xxl) 0;
+    padding: var(--spacing-lg) 0;
     background: var(--color-white);
     position: relative;
 }

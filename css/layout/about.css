@@ -1,5 +1,5 @@
 .about {
-    padding: var(--spacing-xxl) 0;
+    padding: var(--spacing-lg) 0;
     background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-white) 100%);
     position: relative;
 }
@@ -38,7 +38,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: var(--spacing-md);
-    margin-top: var(--spacing-xl);
+    margin-top: var(--spacing-lg);
 }
 
 .about__feature {
