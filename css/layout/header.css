@@ -90,19 +90,6 @@
     border-radius: 2px;
 }
 
-.header__burger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(9px, 9px);
-}
-
-.header__burger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.header__burger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(9px, -9px);
-}
-
-/* Mobile Menu */
 .mobile-menu {
     position: fixed;
     top: 70px;
@@ -142,7 +129,6 @@
     color: var(--color-accent);
 }
 
-/* Responsive */
 @media (max-width: 1024px) {
     .header__menu {
         gap: 1.5rem;
